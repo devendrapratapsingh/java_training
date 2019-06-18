@@ -7,7 +7,7 @@ public class 	Person {
 	private boolean isHuman;
 	private int age;
 	private String name;
-	
+
 	public boolean isHuman() {
 		return isHuman;
 	}
@@ -28,11 +28,11 @@ public class 	Person {
 	}
 
 	public Person() {
-		
+
 	}
-	
+
 	public Person(boolean randomIsHuman,int randomAge,String randomName) {
-		
+
 		this.age=randomAge;
 		this.isHuman=randomIsHuman;
 		this.name=randomName;

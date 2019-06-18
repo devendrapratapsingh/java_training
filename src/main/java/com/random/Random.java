@@ -15,11 +15,24 @@ public class Random {
 	 */
 		public <T> T getRandomValue(List<T> inputList)
 		{   assert(inputList!=null);
-		int i=0;
-			long time=System.nanoTime();
+		    Seed seed=new Seed();
 			int length=inputList.size();
-			int randomIndex=(int) (time % (length + i));
+			int randomIndex=(int) (seed.getSeed() % (length));
 			return inputList.get(randomIndex);
 		}
-		
+
+
+    private class Seed {
+        private long seed;
+
+        public long getSeed() {
+            return seed;
+        }
+
+        Seed() {
+            this.seed = System.nanoTime();
+        }
+
+    }
+
 }

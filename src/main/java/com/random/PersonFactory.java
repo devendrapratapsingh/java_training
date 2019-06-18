@@ -6,10 +6,10 @@ import java.util.List;
 
 
 /**
- *To get the list of random persons
+ *To get the list of random persons with the predefined lists for ages,names and humanTypes
  */
-public class PersonFactory {
-	
+public class PersonFactory
+{
 	static List<Integer> ages=Arrays.asList(21,22,23,24,25,56,57,58,595,50,51,52,53,54,55,26,27,58,59,50,51,52,43,54,55,51);
 	static List<String> names=Arrays.asList("priya","shivam","himanshu","riya","rajat","kirtika","ashima","bikram","anil","jestin","raj","krantika","jaya","priyanka","shiv","ayush","rita","kanchan","kirti","aneesha","vikram","arun","mathew","surbhi","sandarbh","joy");
 	static List<Boolean> humanTypes=Arrays.asList(true,false);
@@ -19,17 +19,12 @@ public class PersonFactory {
 	 *
 	 * @return the list of type Person
 	 */
-	public static List<Person> getRandomPersonList() {
+	public static List<Person> getRandomPersonList()
+    {
 		return randomPersonList;
 	}
 
 	static  List<Person> randomPersonList=new ArrayList<Person>();
-
-	public static  void  main(String args[])
-	{
-		createRandomPersonList(5);
-
-	}
 
 	/**
 	 *To create the list of random person
@@ -39,8 +34,8 @@ public class PersonFactory {
 	public static List<Person> createRandomPersonList(int number_of_person)
 	{
 		Random random=new Random();
-
-		 if(number_of_person==0)
+		//Take the number of persons in the list to be 10 if the user does not provide the number of persons for the list
+        if(number_of_person==0)
          {
         	 number_of_person=10;
          }
@@ -52,9 +47,5 @@ public class PersonFactory {
 
 		return randomPersonList;		
 	}
-	
-	
-	
-	
-	}
+}
 
