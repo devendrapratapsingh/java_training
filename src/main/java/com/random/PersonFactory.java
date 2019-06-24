@@ -19,7 +19,7 @@ public class PersonFactory
 	 *
 	 * @return the list of type Person
 	 */
-	public static List<Person> getRandomPersonList()
+	public  List<Person> getRandomPersonList()
     {
 		return randomPersonList;
 	}
@@ -31,7 +31,7 @@ public class PersonFactory
 	 * @param number_of_person
 	 * @return the list of type Person
 	 */
-	public static List<Person> createRandomPersonList(int number_of_person)
+	public  List<Person> createRandomPersonList(int number_of_person)
 	{
 		Random random=new Random();
 		//Take the number of persons in the list to be 10 if the user does not provide the number of persons for the list
