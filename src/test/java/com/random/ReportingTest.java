@@ -35,11 +35,14 @@ import static org.junit.Assert.assertNotNull;
           public void filterPersonByHumanFlagTest() {
               assertNotNull(this.reporting.filterPersonByHumanFlag(persons,true));
           }
-
+          @Test
           public  void filterPersonByNameTest(){
               assertNotNull(this.reporting.filterPersonByName(persons,"a"));
          }
+         @Test
+          public void filterPersonByAgegeaterThanTest(){
+              assertNotNull(this.reporting.filterPersonByAgegeaterThan(persons,2));
+         }
 
-         
 
       }
