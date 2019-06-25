@@ -22,6 +22,9 @@ public class Random {
 		}
 
 
+    /**
+     * To provide time in nanoseconds in long
+     */
     private class Seed {
         private long seed;
 

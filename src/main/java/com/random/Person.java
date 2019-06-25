@@ -3,7 +3,7 @@ package com.random;
 /**
  * To specify the attributes of the person
  */
-public class 	Person {
+public class Person {
 	private boolean isHuman;
 	private int age;
 	private String name;
@@ -31,6 +31,11 @@ public class 	Person {
 
 	}
 
+    /**
+     * @param randomIsHuman Random isHuman value for the person
+     * @param randomAge Random age for the person
+     * @param randomName Random name for the person
+     */
 	public Person(boolean randomIsHuman,int randomAge,String randomName) {
 
 		this.age=randomAge;

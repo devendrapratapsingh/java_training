@@ -32,14 +32,14 @@ public class PersonFactory
 	 * @return the list of type Person
 	 */
 	public  List<Person> createRandomPersonList(int number_of_person)
-	{
+	{ int size=number_of_person;
 		Random random=new Random();
 		//Take the number of persons in the list to be 10 if the user does not provide the number of persons for the list
         if(number_of_person==0)
          {
-        	 number_of_person=10;
+        	 size=10;
          }
-		for(int i=0;i<number_of_person;i++)
+		for(int i=0;i<size;i++)
 		{
 			Person person=new Person(random.getRandomValue(humanTypes),random.getRandomValue(ages),random.getRandomValue(names));
 			randomPersonList.add(person);

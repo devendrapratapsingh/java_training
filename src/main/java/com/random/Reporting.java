@@ -3,6 +3,9 @@ package com.random;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * To filter the persons and create lists as per given criteria
+ */
 public class Reporting {
 	
 	private static List<Person> humanFilteration=new ArrayList<Person>();
@@ -10,6 +13,11 @@ public class Reporting {
 	private static List<Person> ageFilteration=new ArrayList<Person>();
 
 
+	/**
+	 * @param persons
+	 * @param humantype_criteria
+	 * @return list of persons fulfilling the given humantype criteria
+	 */
 	public  List<Person> filterPersonByHumanFlag(List<Person> persons,boolean humantype_criteria)
 	{
 
@@ -22,6 +30,11 @@ public class Reporting {
 		return humanFilteration;
 	}
 
+	/**
+	 * @param persons
+	 * @param name_criteria
+	 * @return list of persons fulfilling  the given name criteria
+	 */
 	public  List<Person> filterPersonByName(List<Person> persons,String name_criteria)
 	{
 		for(Person person: persons){
@@ -32,7 +45,12 @@ public class Reporting {
 	}
 	return nameFilteration;
 	}
-	
+
+	/**
+	 * @param persons
+	 * @param age_criteria
+	 * @return list of persons fulfilling the given age criteria
+	 */
 	public  List<Person> filterPersonByAgegeaterThan(List<Person> persons,int age_criteria)
 	{
 		for(Person person: persons){
