@@ -28,21 +28,28 @@ public class RandomTest {
     public void getRandomValue_ForStringTypeList() {
         String firstRandomValue=this.random.getRandomValue(this.inputStringList);
         String secondRandomValue=this.random.getRandomValue(this.inputStringList);
+        String thirdRandomValue=this.random.getRandomValue(this.inputStringList);
+
         assertNotEquals("Both the values should not match",firstRandomValue,secondRandomValue);
+        assertNotEquals("Both the values should not match",secondRandomValue,thirdRandomValue);
     }
     @Test
         public void getRandomValue_ForBooleanTypeList() {
         boolean firstRandomValue = this.random.getRandomValue(this.inputBooleanList);
         boolean secondRandomValue = this.random.getRandomValue(this.inputBooleanList);
+        boolean thirdRandomValue = this.random.getRandomValue(this.inputBooleanList);
         assertNotEquals("Both the values should not match",firstRandomValue,secondRandomValue);
+        assertNotEquals("Both the values should not match",secondRandomValue,thirdRandomValue);
     }
 
         @Test
         public void getRandomValue_ForIntegerTypeList() {
         int firstRandomValue=this.random.getRandomValue(this.inputIntegerList);
         int secondRandomValue=this.random.getRandomValue(this.inputIntegerList);
+        int thirdRandomValue=this.random.getRandomValue(this.inputIntegerList);
         assertNotEquals("Both the values should not match",firstRandomValue,secondRandomValue);
-    }
+        assertNotEquals("Both the values should not match",secondRandomValue,thirdRandomValue);
+        }
 
 
     @After
